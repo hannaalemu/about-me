@@ -16,15 +16,24 @@ lab2 = prompt ("How many hours do you think it took the average student to compl
 
 friend = prompt ("Would you reccomend this course to a friend?");
 
-material = "yes"
-alert ("HElloo");
+var answer = friend.toUpperCase();
+
+var answer2 = material.toUpperCase();
 
 
-if(friend == 'yes' || friend == 'YES') {
+if(answer === 'YES' || answer === 'Y') {
   console.log('Glad to hear ! ');
-} else if ( friend == 'no' || friend == 'NO') {
+} else if ( answer == 'N' || answer == 'NO') {
   console.log('Sorry to hear!');
 }else {
   console.log("Error");
 }
+
+if(answer2 === 'YES' || answer2 === 'Y') {
+    console.log('Glad to hear ! ');
+  } else if ( answer2 == 'N' || answer2 == 'NO') {
+    console.log('Sorry to hear!');
+  }else {
+    console.log("Error");
+  }
     
