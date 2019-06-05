@@ -1,24 +1,34 @@
 'use strict';
 
-var personsname;
-var firstday;
-var material;
-var lab2;
-var friend;
+usersname=prompt ("Hi there, I'm Hanna, what's your name?")
+console.log(username);
+alert ("Nice to meet you , "+  usersname  + " Let's play a little game to see if you know me well! ")
 
- personsname = prompt ("Hi there, what's your name?");
-    alert (" Nice to meet you " + personsname )
- firstday = prompt ("How was your first day of Code 201?");
+var q1answer = prompt (" [Y/N] Do you think my birth name was 'Hanna'? ")
+  console.log(q1answer.toUpperCase());
+  If (q1answer === "Y"){
+    alert ("Nope, it was actually 'Hannamariam Engidawork Alemu' LOL!" );
 
- material = prompt ("Did you find the material easy to understand?");
+    else If (q1answer === "N"){
+    alert( "Yup! It was the longest name ever! ");
+    }
 
-lab2 = prompt ("How many hours do you think it took the average student to complete Lab2?");
+    else {
+      alert( "Error! PLease enter [Y/N]");
+    }
+  }
 
-friend = prompt ("Would you reccomend this course to a friend?");
+var q2answer = prompt (" [Y/N] If I had become a nurse, do you think I'd be good at it ? ")
+  console.log(q2answer.toUpperCase());
 
-var answer = friend.toUpperCase();
+  var q3answer = prompt (" [Y/N] Do you think I speak four languages? ")
+  console.log(q3answer.toUpperCase());
 
-var answer2 = material.toUpperCase();
+  var q4answer = prompt (" [Y/N] Do you think I moved from Minnesota to Seattle for school? ")
+  console.log(q4answer.toUpperCase());
+
+  var q5answer = prompt (" [Y/N] Do you think I'm 21 years old? ")
+console.log(q5answer.toUpperCase());
 
 
 if(answer === 'YES' || answer === 'Y') {
