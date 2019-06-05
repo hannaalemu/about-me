@@ -1,26 +1,23 @@
 'use strict';
 
-var personsname = prompt ("Hi there, what's your name?");
+var personsname;
+var firstday;
+var material;
+var lab2;
+var friend;
+
+ personsname = prompt ("Hi there, what's your name?");
     alert (" Nice to meet you " + personsname )
+ firstday = prompt ("How was your first day of Code 201?");
 
-var firstday = prompt ("How was your first day of Code 201?");
+ material = prompt ("Did you find the material easy to understand?");
 
-var material = prompt ("Did you find the material easy to understand?");
- 
-var answer = ["yes", "no"];
+lab2 = prompt ("How many hours do you think it took the average student to complete Lab2?");
 
-answer.push("yes");
+friend = prompt ("Would you reccomend this course to a friend?");
 
-var lab2 = prompt ("How many hours do you think it took the average student to complete Lab2?");
-
-var friend = prompt ("Would you reccomend this course to a friend?");
-
-var answer = ['yes', 'YES' , 'no' , 'NO' ];
-
-friend.push('yes');
-friend.push('no');
-
-console.log(answer);
+material = "yes"
+alert ("HElloo");
 
 
 if(friend == 'yes' || friend == 'YES') {
