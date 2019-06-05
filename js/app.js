@@ -1,49 +1,67 @@
 'use strict';
 
-usersname=prompt ("Hi there, I'm Hanna, what's your name?")
-console.log(username);
-alert ("Nice to meet you , "+  usersname  + " Let's play a little game to see if you know me well! ")
+var usersname = prompt("Hi there, I'm Hanna, what's your name? " );
+console.log(usersname);
+alert ("Nice to meet you , "+  usersname  + ". " + " Let's play a little game to see if you know me well! ");
 
-var q1answer = prompt (" [Y/N] Do you think my birth name was 'Hanna'? ")
-  console.log(q1answer.toUpperCase());
-  If (q1answer === "Y"){
+var q1answer = prompt (" [Y/N] Do you think my birth name was 'Hanna'? ").toUpperCase();
+  console.log(q1answer);
+  
+  if (q1answer === "Y") {
     alert ("Nope, it was actually 'Hannamariam Engidawork Alemu' LOL!" );
-
-    else If (q1answer === "N"){
-    alert( "Yup! It was the longest name ever! ");
-    }
-
-    else {
+  } else if (q1answer === "N") {
+    alert( "Yup! It was the longest name ever! " );
+    } else {
       alert( "Error! PLease enter [Y/N]");
     }
-  }
+var q2answer = prompt (" [Y/N] If I had become a nurse, do you think I'd be good at it ?").toUpperCase();
+  console.log(q2answer);
 
-var q2answer = prompt (" [Y/N] If I had become a nurse, do you think I'd be good at it ? ")
-  console.log(q2answer.toUpperCase());
+  if (q2answer === "Y") {
+    alert (" Aww thank you!" );
 
-  var q3answer = prompt (" [Y/N] Do you think I speak four languages? ")
-  console.log(q3answer.toUpperCase());
+   } else if (q2answer === "N") {
+    alert( " Really? Bummer! ");
+    } else {
+      alert( "Error! PLease enter [Y/N]");
+    }
 
-  var q4answer = prompt (" [Y/N] Do you think I moved from Minnesota to Seattle for school? ")
-  console.log(q4answer.toUpperCase());
+  var q3answer = prompt (" [Y/N] Do you think I speak four languages? ").toUpperCase();
+  console.log(q3answer);
 
-  var q5answer = prompt (" [Y/N] Do you think I'm 21 years old? ")
-console.log(q5answer.toUpperCase());
+  if (q3answer === "Y") {
+    alert (" Gotcha! I actually speak only two! " );
+
+  }else if (q3answer === "N"){
+    
+    alert( " You got it right! I only speak two languages. ");
+    } else {
+      alert( "Error! PLease enter [Y/N]");
+    }
+  var q4answer = prompt (" [Y/N] Do you think I moved from Minnesota to Seattle for school? ").toUpperCase();
+  console.log(q4answer);
+
+  if (q4answer === "Y") {
+    alert (" That's kind of true, but I moved because it was too cold! " );
+
+  }else if (q4answer === "N"){
+    
+    alert( " Yup! I moved because it was too cold! ");
+    } else {
+      alert( "Error! PLease enter [Y/N]");
+    }
 
 
-if(answer === 'YES' || answer === 'Y') {
-  console.log('Glad to hear ! ');
-} else if ( answer == 'N' || answer == 'NO') {
-  console.log('Sorry to hear!');
-}else {
-  console.log("Error");
-}
+  var q5answer = prompt (" [Y/N] Do you think I'm 21 years old? ").toUpperCase();
+console.log(q5answer);
 
-if(answer2 === 'YES' || answer2 === 'Y') {
-    console.log('Glad to hear ! ');
-  } else if ( answer2 == 'N' || answer2 == 'NO') {
-    console.log('Sorry to hear!');
-  }else {
-    console.log("Error");
+if (q5answer === "Y") {
+  alert (" Yup! " );
+
+}else if (q5answer === "N"){
+  
+  alert( " I get that a lot, but I really am 21 years old. " );
+  } else {
+    alert( "Error! PLease enter [Y/N]");
   }
     
