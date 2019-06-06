@@ -6,7 +6,7 @@ alert ("Nice to meet you , "+  usersname  + ". " + " Let's play a little game to
 
 var q1answer = prompt (" [Y/N] Do you think my birth name was 'Hanna'? ").toUpperCase();
   console.log(q1answer);
-  
+
   if (q1answer === "Y") {
     alert ("Nope, it was actually 'Hannamariam Engidawork Alemu' LOL!" );
   } else if (q1answer === "N") {
@@ -33,7 +33,7 @@ var q2answer = prompt (" [Y/N] If I had become a nurse, do you think I'd be good
     alert (" Gotcha! I actually speak only two! " );
 
   }else if (q3answer === "N"){
-    
+
     alert( " You got it right! I only speak two languages. ");
     } else {
       alert( "Error! PLease enter [Y/N]");
@@ -45,7 +45,7 @@ var q2answer = prompt (" [Y/N] If I had become a nurse, do you think I'd be good
     alert (" That's kind of true, but I moved because it was too cold! " );
 
   }else if (q4answer === "N"){
-    
+
     alert( " Yup! I moved because it was too cold! ");
     } else {
       alert( "Error! PLease enter [Y/N]");
@@ -59,49 +59,60 @@ if (q5answer === "Y") {
   alert (" Yup! " );
 
 }else if (q5answer === "N"){
-  
+
   alert( " I get that a lot, but I really am 21 years old. " );
   } else {
     alert( "Error! PLease enter [Y/N]");
   }
-    
-  var guesses = 4;
 
-  while ( guesses > 0 ) {
-    var q6answer = prompt (" How many cups of coffee do you think I have every day? ");
-  console.log(q6answer);
- 
-  if (q6answer > 2) {
-    alert("That's too much coffee!");
-    guesses--;
-  }else if (q6answer < 2) {
-    alert("Thats not enough coffee!");
-    guesses--;
-  }else if(q6answer == 2) {
-    alert("That's exactly correct!");
-  break;
-  }
-  }
+var guesses = 4;
 
-  var gbguesses = 6;
-  
-  while (gbguesses > 0 ) {
-    
-    var q7answer = prompt(" Can you guess my favorite gummybear color? ").toLowerCase();
-    console.log(q7answer);
-  }
-  
-  var favcolors = ["red" , "yellow" , "green" , "blue" , "orange" , "colorless" ];
-  
+var q6answer = parseInt(prompt (" How many cups of coffee do you think I have every day? "));
+while ( guesses > 0 ) {
+
+  guesses--;
+if (q6answer > 2) {
+  alert("That's too much coffee!");
+  q6answer = parseInt(prompt (" Try again! "));
+console.log(q6answer, "too high");
+
+}else if (q6answer < 2) {
+  alert("That's not enough coffee!");
+  q6answer =parseInt(prompt ("Try again! "));
+console.log(q6answer, "too low");
+}else if(q6answer == 2) {
+  alert("That's exactly correct!");
+  console.log(q6answer, 'correct');
+break;
+}
+}
+
+var gbguesses = 6;
+var correct = false;
+var favcolors = ['red' , 'yellow' , 'green' , 'blue' , 'orange' , 'colorless' ];
+
+while (gbguesses > 0 ) {
+
+  var q7answer = prompt(' Can you guess my favorite gummybear color? ').toLowerCase();
+  console.log(q7answer);
+  gbguesses--;
   for(var i =0; i < favcolors.length; i++){
-    
-  if (q7answer === favcolors[i]) {
-    alert ("Correct");
-  }
-    else if(q7answer = true){
-      alert("correcttttt")
+
+    if (q7answer === favcolors[i]){
+      correct=true;
     }
- }
+  }
+  if (correct===true){
+    alert(q7answer + ' is one of my favorie flavors ');
+    break;
+  }
+  else if (correct ===false){
+    alert('try again');
+  }
+}
+
+
+
 
 
 
