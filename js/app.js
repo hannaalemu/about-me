@@ -65,3 +65,47 @@ if (q5answer === "Y") {
     alert( "Error! PLease enter [Y/N]");
   }
     
+  var guesses = 4;
+
+  while ( guesses > 0 ) {
+    var q6answer = prompt (" How many cups of coffee do you think I have every day? ");
+  console.log(q6answer);
+ 
+  if (q6answer > 2) {
+    alert("That's too much coffee!");
+    guesses--;
+  }else if (q6answer < 2) {
+    alert("Thats not enough coffee!");
+    guesses--;
+  }else if(q6answer == 2) {
+    alert("That's exactly correct!");
+  break;
+  }
+  }
+
+  var gbguesses = 6;
+  
+  while (gbguesses > 0 ) {
+    
+    var q7answer = prompt(" Can you guess my favorite gummybear color? ").toLowerCase();
+    console.log(q7answer);
+  }
+  
+  var favcolors = ["red" , "yellow" , "green" , "blue" , "orange" , "colorless" ];
+  
+  for(var i =0; i < favcolors.length; i++){
+    
+  if (q7answer === favcolors[i]) {
+    alert ("Correct");
+  }
+    else if(q7answer = true){
+      alert("correcttttt")
+    }
+ }
+
+
+
+
+
+
+
