@@ -16,6 +16,7 @@ function yesNoQuestions() {
   }
 }
 
+var correctAnswers=0
 //This is question 1
 
 function q1() {
@@ -26,6 +27,7 @@ function q1() {
     alert ('Nope, it was actually \'Hannamariam Engidawork Alemu\' LOL!' );
   } else if (q1answer === 'N') {
     alert( 'Yup! It was the longest name ever! ' );
+    correctAnswers++;
   } else {
     alert( 'Error! PLease enter [Y/N]');
   }
@@ -39,6 +41,7 @@ function q2() {
 
   if (q2answer === 'Y') {
     alert (' Aww thank you!' );
+    correctAnswers++;
 
   } else if (q2answer === 'N') {
     alert( ' Really? Bummer! ');
@@ -59,6 +62,7 @@ function q3() {
   }else if (q3answer === 'N'){
 
     alert( ' You got it right! I only speak two languages. ');
+    correctAnswers++;
   } else {
     alert( 'Error! PLease enter [Y/N]');
   }
@@ -76,6 +80,7 @@ function q4() {
   }else if (q4answer === 'N'){
 
     alert( ' Yup! I moved because it was too cold! ');
+    correctAnswers++;
   } else {
     alert( 'Error! PLease enter [Y/N]');
   }
@@ -89,6 +94,7 @@ function q5() {
 
   if (q5answer === 'Y') {
     alert (' Yup! ' );
+    correctAnswers++;
 
   }else if (q5answer === 'N'){
 
@@ -119,6 +125,7 @@ function q6() {
     }else if(q6answer == 2) {
       alert('That\'s exactly correct!');
       console.log(q6answer, 'correct');
+      correctAnswers++;
       break;
     }
   }
@@ -145,6 +152,7 @@ function q7() {
     }
     if (correct === true){
       alert(q7answer + ' is one of my favorie flavors ');
+      correctAnswers++;
       break;
     }
     else if (correct === false){
@@ -159,6 +167,8 @@ yesNoQuestions();
 q6();
 q7();
 
+alert( usersname + ' You got ' + correctAnswers + ' questions right !');
+console.log(" you got " + correctAnswers + " questions right! ");
 
 
 
